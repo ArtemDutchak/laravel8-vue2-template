@@ -1,0 +1,59 @@
+@import 'theme';
+
+html{
+  overflow-y: hidden !important;
+}
+
+.v-application{
+  height: 100vh;
+}
+
+.navigation-drawer{
+  height: auto !important;
+}
+
+.account-drawer{
+  height: auto !important;
+}
+
+.lrr-drawer{
+  height: auto !important;
+  min-width: 405px !important;
+
+  .v-navigation-drawer__content{
+    overflow-y: hidden !important;
+  }
+
+}
+
+.invisable .v-expansion-panel-content__wrap{
+  padding: 0;
+}
+.invisable.v-expansion-panel:before{
+  box-shadow: none;
+}
+
+.langs{
+  padding: 8px 0 !important;
+
+  &.v-list-item__content{
+    flex: none;
+  }
+
+  .v-tabs--icons-and-text>.v-tabs-bar {
+    height: 32px;
+  }
+
+  .v-tab {
+    padding: 0 0;
+    min-width: 32px;
+  }
+
+  .v-tabs>.v-tabs-bar{
+    background-color: transparent !important;
+  }
+
+
+
+
+}

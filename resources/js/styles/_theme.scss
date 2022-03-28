@@ -1,0 +1,52 @@
+/**
+ * Customized version of bootstrap using variables from _variables.scss.
+ * This file is loaded via separate loader thus allowing to use original bootstrap classes (e.g. .btn-default) through out the app.
+ */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800');
+
+@import 'variables';
+@import 'theme-variables';
+@import 'mixins';
+@import 'base';
+@import 'auth';
+@import 'overrides';
+@import 'general';
+@import 'utils';
+
+
+.theme--dark{
+
+  &.v-navigation-drawer{
+    border-bottom: 1px solid #4e4e4e;
+  }
+
+  &.lrr-drawer.v-navigation-drawer{
+    background-color: #1e1e1e;
+  }
+
+  &.v-tabs>.v-tabs-bar .v-tab:not(.v-tab--active){
+    color: #ffffff99;
+  }
+
+}
+
+
+.theme--light{
+
+  &.v-navigation-drawer{
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .langs .v-tab:not(.v-tab--active){
+    color: #757575 !important;
+  }
+  .langs .v-tab.v-tab--active{
+    color: #1976d2 !important;
+  }
+  .langs .v-tab.v-tab--active,
+  .langs .v-tab:before,
+  .langs .v-tabs-slider{
+    color: #1976d2 !important;
+  }
+
+}
