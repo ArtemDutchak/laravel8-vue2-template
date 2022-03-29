@@ -2,10 +2,9 @@
   <v-app>
     <v-main>
 
-      <AppBar />
-
-      <router-view v-slot="{ Component, route }">
-      </router-view>
+    <AppBar />
+    
+    <router-view />
 
     </v-main>
   </v-app>
