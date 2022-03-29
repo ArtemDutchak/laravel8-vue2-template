@@ -2,6 +2,15 @@
   "count":{
     "days": "days | days | days | days"
   },
+  "menu":{
+    "dashboard": "Dashboard",
+    "categories": "Categories",
+    "custom_urls": "Custom Urls",
+    "scan_list": "Scan List",
+    "favorites": "Favorites",
+    "listing": "Listing",
+    "settings": "Settings"
+  },
   "button":{
     "switchDarkTheme": "Dark Theme"
   }
