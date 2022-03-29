@@ -20,7 +20,7 @@ export default {
   name: 'Home',
 
   data: () => ({
-    title: "_title",
+    title: "Home",
   }),
 
   methods:{
