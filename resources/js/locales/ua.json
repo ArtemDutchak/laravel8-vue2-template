@@ -2,6 +2,15 @@
   "count":{
     "days": "днів | день | дні | днів"
   },
+  "menu":{
+    "dashboard": "Дашборд",
+    "categories": "Категорії",
+    "custom_urls": "Власні URL",
+    "scan_list": "Список сканування",
+    "favorites": "Улюблене",
+    "listing": "Лістинг",
+    "settings": "Налаштування"
+  },
   "button":{
     "switchDarkTheme": "Темна тема"
   }
