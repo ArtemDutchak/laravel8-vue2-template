@@ -2,6 +2,15 @@
   "count":{
     "days": "дней | день | дня | дней"
   },
+  "menu":{
+    "dashboard": "Дашборд",
+    "categories": "Категории",
+    "custom_urls": "Собственные URL",
+    "scan_list": "Список сканирования",
+    "favorites": "Избранное",
+    "listing": "Листинг",
+    "settings": "Настройки"
+  },
   "button":{
     "switchDarkTheme": "Темная тема"
   }
