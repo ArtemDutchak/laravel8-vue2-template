@@ -28,37 +28,19 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
-          <v-list-group
-            v-for="item in navMenuItems"
-            :key="item.title"
-            v-model="item.active"
-            :prepend-icon="item.icon"
-            no-action
-            active-class="no-active"
+      <v-list>
+        <v-list-item
+          v-for="(item, index) in navMenuItems"
+          :key="'item_' + index"
+          :to="{name: item.route}"
           >
-            <template v-slot:activator>
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-title>{{ item.title }}</v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </template>
-
-            <v-list-item
-              v-for="subItem in item.items"
-              :key="subItem.title"
-              :to="{name: subItem.route}"
-            >
-              <v-list-item-content>
-                <v-list-item-title>{{ subItem.title }}</v-list-item-title>
-              </v-list-item-content>
-
-              <v-list-item-action>
-                <v-icon>{{ subItem.icon }}</v-icon>
-              </v-list-item-action>
-            </v-list-item>
-          </v-list-group>
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title>{{ $t(`menu.${item.code}`) }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
         </v-list>
 
       </v-navigation-drawer>
