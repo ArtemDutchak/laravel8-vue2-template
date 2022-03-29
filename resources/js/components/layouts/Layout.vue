@@ -1,12 +1,11 @@
 <template>
-  <transition>
 
-      <component :is="Component" :key="route.path" />
-  </transition>
+    <router-view v-slot="{ Component, route }">
+    </router-view>
+
 </template>
 
 <script>
-
 
 export default {
   name: 'Layout',
