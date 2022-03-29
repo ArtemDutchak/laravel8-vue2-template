@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import layoutModule from './layout';
-import navMenuModule from './navmenu';
-import drawerModule from './drawers';
-import userModule from './user';
-import languageModule from './language';
+import layoutModule from './modules/layout';
+import navMenuModule from './modules/navmenu';
+import drawerModule from './modules/drawers';
+import userModule from './modules/user';
+import languageModule from './modules/language';
 
 Vue.use(Vuex);
 
