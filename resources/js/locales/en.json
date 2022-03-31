@@ -11,6 +11,10 @@
     "listing": "Listing",
     "settings": "Settings"
   },
+  "title":{
+    "categories": "Categories",
+    "saved_categories": "Saved Categories"
+  },
   "button":{
     "switchDarkTheme": "Dark Theme"
   }
