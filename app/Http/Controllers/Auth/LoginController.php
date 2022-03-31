@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use App\Http\Controllers\VueAppController;
+use App\Http\Controllers\AppController;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
@@ -50,15 +50,15 @@ class LoginController extends Controller
         'success' => false,
       ];
 
-      if(Auth::attempt(['email'=> $request['email'], 'password'=> $request['password']]))
+      if(Auth::attempt(['email'=> $request['email'], 'password'=> $request['password']], true))
       {
-        $user = VueAppController::getUserInfo();
+        $user = AppController::getUserInfo();
         if ($user) {
           $out['success'] = true;
           $out['data'] = $user;
         }
       }
-      
+
       return response()->json($out);
     }
 
