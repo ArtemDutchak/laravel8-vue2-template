@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
-class VueAppController extends Controller
+class AppController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -29,7 +29,7 @@ class VueAppController extends Controller
         // Session::flush();
         // Auth::logout();
 
-        $user = VueAppController::getUserInfo();
+        $user = AppController::getUserInfo();
 
         return view('app')->with([
           'user' => $user
