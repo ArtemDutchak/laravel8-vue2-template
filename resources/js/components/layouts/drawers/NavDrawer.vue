@@ -3,8 +3,8 @@
       absolute
       left
       class="navigation-drawer"
-      :permanent="showNavigationDrawer"
-      :value="showNavigationDrawer"
+      :permanent="showNavigationDrawer && user"
+      :value="showNavigationDrawer && user"
     >
 
     <template v-slot:prepend>
@@ -72,6 +72,7 @@ export default {
     ...mapGetters({
       showNavigationDrawer: 'drawerModule/showNavigationDrawer',
       navMenuItems: 'navMenuModule/navMenu',
+      user: 'userModule/user'
     }),
   },
 
