@@ -11,6 +11,10 @@
     "listing": "Лістинг",
     "settings": "Налаштування"
   },
+  "title":{
+    "categories": "Категорії",
+    "saved_categories": "Збережені категорії"
+  },
   "button":{
     "switchDarkTheme": "Темна тема"
   }
