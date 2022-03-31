@@ -8,8 +8,17 @@ html{
   height: 100vh;
 }
 
+.v-app-bar{
+  z-index: 9999 !important;
+}
+
 .navigation-drawer{
   height: auto !important;
+}
+
+.page{
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .account-drawer{
