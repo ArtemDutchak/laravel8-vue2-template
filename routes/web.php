@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index']);
-Route::get('{path}', [App\Http\Controllers\VueAppController::class, 'index'])->where('path', '.+');
-Route::get('/', [App\Http\Controllers\VueAppController::class, 'index']);
+Route::get('{path}', [App\Http\Controllers\AppController::class, 'index'])->where('path', '.+');
+Route::get('/', [App\Http\Controllers\AppController::class, 'index']);
 
 Auth::routes();
