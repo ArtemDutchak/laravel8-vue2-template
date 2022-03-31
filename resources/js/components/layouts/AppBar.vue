@@ -6,6 +6,7 @@
     <NavDrawer />
 
     <v-app-bar-nav-icon
+      v-if="user"
       @click="toggleNavigationDrawer"
       class="mr-3"
     >
@@ -16,7 +17,7 @@
     <v-spacer></v-spacer>
 
     <v-btn
-      v-if="loggedUser"
+      v-if="user"
       icon
       @click="toggleAccountDrawer"
     >
@@ -24,7 +25,7 @@
     </v-btn>
 
     <v-btn
-      v-if="!loggedUser"
+      v-if="!user"
       icon
       @click="toggleLRRDrawer"
     >
@@ -68,7 +69,7 @@ export default {
 
   computed:{
     ...mapGetters({
-      loggedUser: 'userModule/user'
+      user: 'userModule/user'
     }),
     title(){
       return 'App Bar Title'
